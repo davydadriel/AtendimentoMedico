@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    
+     <!-- Médicos -->
+    
+    <!-- Pessoa id = 1 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Darth Vader" TXT_RG="6666" />
+    <TB_Medico ID_PESSOA="1" TXT_CRM = "7987456654" TXT_SENHA = "LadoNegroDaForça"/>
+    
+    <!-- Pessoa id = 2 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Yoda" TXT_RG="9999" />
+    <TB_Medico ID_PESSOA="2" TXT_CRM = "56465465" TXT_SENHA = "LadoBrancoDaForça"/>
+    
+    <!-- Pacientes -->
+     <!-- Pessoa id = 3 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Anakin Skywalker" TXT_RG="5555" />
+    <TB_Paciente ID_PESSOA="3" TXT_MATRICULA = "566464"/>
+   
+    <!-- Prontuario id = 1 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Baixa" FK_Paciente = "3"/>
+    
+    <!-- Prontuario id = 1 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Alta" FK_Paciente = "3"/>
+    
+    <!-- Prontuario id = 1 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Seila" FK_Paciente = "3"/>
+    
+    
+
+  
+    
+    
+</dataset>
