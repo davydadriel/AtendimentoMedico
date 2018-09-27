@@ -11,19 +11,79 @@
     <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Yoda" TXT_RG="9999" />
     <TB_Medico ID_PESSOA="2" TXT_CRM = "56465465" TXT_SENHA = "LadoBrancoDaForça"/>
     
+    <!-- Pessoa id = 3 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Darth Maul" TXT_RG="3333" />
+    <TB_Medico ID_PESSOA="3" TXT_CRM = "7845669854" TXT_SENHA = "LadoNegroDaForça"/>
+    
+    <!-- Pessoa id = 4 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "JABBA" TXT_RG="3654" />
+    <TB_Medico ID_PESSOA="4" TXT_CRM = "5589647562" TXT_SENHA = "AlgumLadoDaForça"/>
+    
+    <!-- Pessoa id = 5 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Boba Fett" TXT_RG="4879" />
+    <TB_Medico ID_PESSOA="5" TXT_CRM = "1478896542" TXT_SENHA = "OMercenario"/>
+    
+    <!-- Pessoa id = 6 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Palpatine" TXT_RG="2249" />
+    <TB_Medico ID_PESSOA="6" TXT_CRM = "8547112359" TXT_SENHA = "LadoNegroDaForça"/>
+    
     <!-- Pacientes -->
-     <!-- Pessoa id = 3 (paciente) -->  
+     <!-- Pessoa id = 1 (paciente) -->  
     <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Anakin Skywalker" TXT_RG="5555" />
-    <TB_Paciente ID_PESSOA="3" TXT_MATRICULA = "566464"/>
+    <TB_Paciente ID_PESSOA="7" TXT_MATRICULA = "566464"/>
+    
+     <!-- Pessoa id = 2 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Princesa Leia" TXT_RG="5987" />
+    <TB_Paciente ID_PESSOA="8" TXT_MATRICULA = "265487"/>
+    
+     <!-- Pessoa id = 3 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Han Solo" TXT_RG="6678" />
+    <TB_Paciente ID_PESSOA="9" TXT_MATRICULA = "369825"/>
+    
+    <!-- Pessoa id = 4 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Luke Skywalker" TXT_RG="1478" />
+    <TB_Paciente ID_PESSOA="10" TXT_MATRICULA = "128954"/>
+    
+    <!-- Pessoa id = 5 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Jar Jar Binks" TXT_RG="6932" />
+    <TB_Paciente ID_PESSOA="11" TXT_MATRICULA = "468235"/>
    
     <!-- Prontuario id = 1 -->
-    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Baixa" FK_Paciente = "3"/>
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "13-08-2018" TXT_PRIORIDADE = "Baixa" FK_Paciente = "3"/>
     
-    <!-- Prontuario id = 1 -->
-    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Alta" FK_Paciente = "3"/>
+    <!-- Prontuario id = 2 -->
+    <TB_Prontuario DT_ENTRADA = "14-08-2018" DT_SAIDA = "18-08-2018" TXT_PRIORIDADE = "Alta" FK_Paciente = "7"/>
     
-    <!-- Prontuario id = 1 -->
-    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Seila" FK_Paciente = "3"/>
+    <!-- Prontuario id = 3 -->
+    <TB_Prontuario DT_ENTRADA = "15-08-2018" DT_SAIDA = "15-08-2018" TXT_PRIORIDADE = "Normal" FK_Paciente = "11"/>
+    
+    <!-- Prontuario id = 4 -->
+    <TB_Prontuario DT_ENTRADA = "19-08-2018" DT_SAIDA = "19-08-2018" TXT_PRIORIDADE = "baixa" FK_Paciente = "9"/>
+    
+    <!-- Prontuario id = 5 -->
+    <TB_Prontuario DT_ENTRADA = "25-08-2018" DT_SAIDA = "26-08-2018" TXT_PRIORIDADE = "alta" FK_Paciente = "8"/>
+    
+    <!-- Prontuario id = 6 -->
+    <TB_Prontuario DT_ENTRADA = "27-08-2018" DT_SAIDA = "27-08-2018" TXT_PRIORIDADE = "normal" FK_Paciente = "10"/>
+    
+    
+     <!-- Atendimento id = 1 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Vacina" TXT_DESCRICAO_ATENDIMENTO = "Vacina contra gripe" FK_Prontuario = "11" />
+     
+    <!-- Atendimento id = 2 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Cirurgia" TXT_DESCRICAO_ATENDIMENTO = "Cirurgia de retirada de bala em diferentes lugares do corpor seguida de recuperação por 3 dias" FK_Prontuario = "7" />
+     
+     <!-- Atendimento id = 3 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Check-up" TXT_DESCRICAO_ATENDIMENTO = "Procedimento de exames de rotina" FK_Prontuario = "9" />
+     
+     <!-- Atendimento id = 4 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Cirurgia" TXT_DESCRICAO_ATENDIMENTO = "Cirurgia de Catarata com um dia de recuperação" FK_Prontuario = "8" />
+     
+     <!-- Atendimento id = 5 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Consulta Dermatologica" TXT_DESCRICAO_ATENDIMENTO = "Consulta dermatologia para paciente com acne em nível alto" FK_Prontuario = "10" />
+     
+     <!-- Atendimento id = 6 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Vacina" TXT_DESCRICAO_ATENDIMENTO = "vacina antitetânica" FK_Prontuario = "3" />
     
     
 
