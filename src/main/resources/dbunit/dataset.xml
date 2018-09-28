@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    
+     <!-- Médicos -->
+    
+    <!-- Pessoa id = 1 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Darth Vader" TXT_RG="6666" />
+    <TB_Medico ID_PESSOA="1" TXT_CRM = "7987456654" TXT_SENHA = "LadoNegroDaForça"/>
+    
+    <!-- Pessoa id = 2 (medico) -->  
+    <TB_Pessoa DISC_PESSOA = "M"  TXT_NOME = "Yoda" TXT_RG="9999" />
+    <TB_Medico ID_PESSOA="2" TXT_CRM = "56465465" TXT_SENHA = "LadoBrancoDaForça"/>
+    
+    <!-- Pacientes -->
+    
+     <!-- Pessoa id = 3 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Anakin Skywalker" TXT_RG="5555" />
+    <TB_Paciente ID_PESSOA="3" TXT_MATRICULA = "566464"/>
+    
+         <!-- Pessoa id = 4 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Ichigo Kurosaki" TXT_RG="56456" />
+    <TB_Paciente ID_PESSOA="4" TXT_MATRICULA = "554"/>
+    
+         <!-- Pessoa id = 5 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Obi wan kenobi" TXT_RG="56456" />
+    <TB_Paciente ID_PESSOA="5" TXT_MATRICULA = "4235"/>
+    
+         <!-- Pessoa id = 6 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Hitsugaya Toushirou" TXT_RG="8977" />
+    <TB_Paciente ID_PESSOA="6" TXT_MATRICULA = "4654"/>
+    
+         <!-- Pessoa id = 7 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Zezinho da Esquina" TXT_RG="8998" />
+    <TB_Paciente ID_PESSOA="7" TXT_MATRICULA = "7885"/>
+    
+         <!-- Pessoa id = 8 (paciente) -->  
+    <TB_Pessoa DISC_PESSOA = "P"  TXT_NOME = "Ritchard Belmont" TXT_RG="54564" />
+    <TB_Paciente ID_PESSOA="8" TXT_MATRICULA = "5587"/>
+   
+    <!-- Prontuario id = 1 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Baixa" FK_Paciente = "5"/>
+    
+    <!-- Prontuario id = 2 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Alta" FK_Paciente = "6"/>
+    
+    <!-- Prontuario id = 3 -->
+    <TB_Prontuario DT_ENTRADA = "13-08-2018" DT_SAIDA = "14-08-2018" TXT_PRIORIDADE = "Seila" FK_Paciente = "4"/>
+    
+    
+    <!-- atendimento id = 1 -->
+    <TB_Atendimento TXT_DESCRICAO_ATENDIMENTO = "Problemas cardiacos" TXT_TIPO_ATENDIMENTO = "Cabuloso" FK_Prontuario = "3" />
+    
+    <!-- atendimento id = 2 -->
+    <TB_Atendimento TXT_DESCRICAO_ATENDIMENTO = "Problemas cardiacos" TXT_TIPO_ATENDIMENTO = "Cabuloso" FK_Prontuario = "2" />
+    
+    <!-- atendimento id = 3 -->
+    <TB_Atendimento TXT_DESCRICAO_ATENDIMENTO = "Problemas respiratorios" TXT_TIPO_ATENDIMENTO = "Cabuloso" FK_Prontuario = "3" />
+    
+    <!-- atendimento id = 4 -->
+    <TB_Atendimento TXT_DESCRICAO_ATENDIMENTO = "Injeção de insulina" TXT_TIPO_ATENDIMENTO = "Cabuloso" FK_Prontuario = "2" />
+    
+      <!-- Atendimento id = 5 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Consulta Dermatologica" TXT_DESCRICAO_ATENDIMENTO = "Consulta dermatologia para paciente com acne em nível alto" FK_Prontuario = "1" />
+     
+     <!-- Atendimento id = 6 -->
+     <TB_Atendimento TXT_TIPO_ATENDIMENTO = "Vacina" TXT_DESCRICAO_ATENDIMENTO = "vacina antitetânica" FK_Prontuario = "3" />
+
+  
+    
+    
+</dataset>
